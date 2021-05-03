@@ -1,0 +1,5 @@
+[16072:20012:0503/003647.765:ERROR:login_database.cc(641)] Password store database is too new, kCurrentVersionNumber=28, GetCompatibleVersionNumber=29
+[16072:20012:0503/003647.821:ERROR:password_store_default.cc(39)] Could not create/open login database.
+[16072:15308:0503/003656.200:ERROR:device_event_log_impl.cc(211)] [00:36:56.194] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[16072:15308:0503/003656.200:ERROR:device_event_log_impl.cc(211)] [00:36:56.199] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[16072:15308:0503/004211.823:WARNING:pref_notifier_impl.cc(40)] Pref observer for media_router.cast_allow_all_ips found at shutdown.

@@ -1,0 +1,6 @@
+2021/03/18-00:38:31.722 137c Reusing MANIFEST C:\Users\Lenovo\Desktop\django\bulk\src\WB\User_Data\Default\Local Storage\leveldb/MANIFEST-000001
+2021/03/18-00:38:31.735 137c Recovering log #4
+2021/03/18-00:38:31.754 137c Reusing old log C:\Users\Lenovo\Desktop\django\bulk\src\WB\User_Data\Default\Local Storage\leveldb/000004.log 
+2021/03/18-00:40:44.933 1e40 Level-0 table #8: started
+2021/03/18-00:40:44.942 1e40 Level-0 table #8: 23185 bytes OK
+2021/03/18-00:40:44.947 1e40 Delete type=0 #4

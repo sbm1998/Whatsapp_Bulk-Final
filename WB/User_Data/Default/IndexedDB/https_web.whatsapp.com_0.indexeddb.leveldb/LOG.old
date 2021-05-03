@@ -1,0 +1,12 @@
+2021/03/18-00:38:46.594 15c0 Reusing MANIFEST C:\Users\Lenovo\Desktop\django\bulk\src\WB\User_Data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/18-00:38:46.597 15c0 Recovering log #15
+2021/03/18-00:38:46.856 15c0 Reusing old log C:\Users\Lenovo\Desktop\django\bulk\src\WB\User_Data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000015.log 
+2021/03/18-00:39:29.009 1cf4 Level-0 table #20: started
+2021/03/18-00:39:29.110 1cf4 Level-0 table #20: 1070759 bytes OK
+2021/03/18-00:39:29.117 1cf4 Delete type=0 #15
+2021/03/18-00:39:37.075 54c Compacting 1@1 + 1@2 files
+2021/03/18-00:39:37.203 54c Generated table #21@1: 808 keys, 130811 bytes
+2021/03/18-00:39:37.203 54c Compacted 1@1 + 1@2 files => 130811 bytes
+2021/03/18-00:39:37.206 54c compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/03/18-00:39:37.207 54c Delete type=2 #17
+2021/03/18-00:39:37.207 54c Delete type=2 #20

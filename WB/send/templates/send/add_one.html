@@ -1,0 +1,64 @@
+{% extends "base.html" %} 
+{% block title %}
+      Add Number
+{% endblock %}
+
+{% block content %}
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-5 align-self-center">
+                <h4 class="page-title">Send Bulk Messages</h4>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <!-- basic table -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="col-12">
+                            {% if messages %}
+                                    <div class="alert bg-{{ message.tags }} text-white">
+                                        <h4> {{ message }}  </h4>
+                                    </div>
+                                    {% endif %}
+                        </div>
+                  
+                        <h4 class="card-title"></h4>
+                            <h6>Add single number</h6>
+                            <pre>Please write the number with the country code.
+Like for india add +91**********
+                            </pre>
+                        <form class="form" method="POST" >
+                                {% csrf_token %}
+
+                            {{form.as_p }}
+                            <div class="col-sm-12" style="margin: auto;text-align: center;">
+                                <button type="submit" class="btn btn-info">Add number</button>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

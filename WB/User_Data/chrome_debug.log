@@ -1,0 +1,2 @@
+[8124:9516:0318/004624.378:ERROR:device_event_log_impl.cc(214)] [00:46:24.378] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[8124:9516:0318/004645.438:INFO:CONSOLE(1)] "WebSocket connection to 'wss://web.whatsapp.com/ws' failed: WebSocket is closed before the connection is established.", source: https://web.whatsapp.com/bootstrap_qr.8c6bd07fd55e4b8fbdb7.js (1)

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}
+      List of Phone Numbers
+{% endblock %}
+
+{% block content %}
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-5 align-self-center">
+                <h4 class="page-title">Send Bulk Messages</h4>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <!-- basic table -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="col-12">
+                            {% if numbers %}
+                            <table>
+                                <tr>
+                                    <th>Phone Numbers</th>
+                                    <th>Keys</th>
+                                </tr>
+                                {% for number in numbers %}
+                                    <tr>
+                                        <td>
+                                            <h3>{{number.number}}</h3>
+                                        </td>
+                                        <td>
+                                            <a href="{% url 'number_delete' number.pk %}" class="btn btn-primary btn-lg active"  style="font-size: medium;">Delete</a>
+                                        </td>
+                                        <td>
+                                            {{number.pk}}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </table>
+                            {% else %}
+                            <a href="{% url 'one' %}" class="btn btn-primary btn-lg active"  style="font-size: medium;">add Number</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

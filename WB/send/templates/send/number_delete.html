@@ -1,0 +1,57 @@
+{% extends "base.html" %} 
+{% block title %}
+      Delete Number
+{% endblock %}
+
+{% block content %}
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-5 align-self-center">
+                <h4 class="page-title">Send Bulk Messages</h4>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <!-- basic table -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="col-12">
+                            {% if user.is_authenticated %}
+        <div>
+            <form action='number_delete' method='POST'>{% csrf_token %}
+                <h1>Are you sure you want to delete the Number???</h1>
+                <p><input value='Delete' type="submit"/>  <a href='{% url "phone_number" %}'>Cancel</a></p>
+
+            </form>
+        </div>
+{% else %}
+    <div>
+        <h4>To go further please Login!!!</h4>
+        <a href="{% url 'send' %} " class="btn btn-primary btn-lg active" >Login</a>
+    </div>
+{% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

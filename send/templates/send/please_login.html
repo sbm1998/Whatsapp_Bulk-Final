@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon.png' %}">
+    <title> InfoTech</title>
+    <!-- Custom CSS -->
+    <link href="{% static 'dist/css/style.min.css' %}" rel="stylesheet">
+  
+</head>
+
+<body>
+    <br><br><br>
+<div class="form-group text-center">
+    <h4>To go further please Login!!!</h4>
+    <a style="background:#09a709;border:#09a709;height: 50px;width: 100px;border-radius: 5px;" class="btn btn-info mt-3 p-15 pl-4 pr-4 mb-3" href="{% url 'login' %}">
+        <b>Login</b></a>
+</div>
+</body>
+</html>
